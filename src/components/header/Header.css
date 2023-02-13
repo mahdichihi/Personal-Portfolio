@@ -77,7 +77,3 @@ header {
     display: none;
   }
 }
-
-/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1024px) {
-}
