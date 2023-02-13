@@ -136,4 +136,7 @@ img {
   section {
     margin-top: 2rem;
   }
+  body {
+    padding: 0.5rem;
+  }
 }
