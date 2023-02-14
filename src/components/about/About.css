@@ -31,14 +31,14 @@
 .about__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .about__card {
   background: var(--color-bg-variant);
   border: 1px solid transparent;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   transition: var(--transition);
 }
@@ -83,6 +83,10 @@
 
   .about__content p {
     margin: 1rem 0 1.5rem;
+  }
+
+  .about__cards {
+    gap: 3rem;
   }
 }
 
