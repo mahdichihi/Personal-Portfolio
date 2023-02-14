@@ -28,6 +28,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    // to whipe typed informations after submitting the form
     e.target.reset();
   };
 
