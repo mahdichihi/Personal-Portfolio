@@ -69,7 +69,7 @@
   color: var(--color-light);
 }
 
-/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+/* ================= MEDIA QUERIES (LAPTOP) ================= */
 @media screen and (max-width: 1024px) {
   .about__container {
     grid-template-columns: 1fr;
@@ -90,16 +90,17 @@
   }
 }
 
-/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
+/* ================= MEDIA QUERIES (TABLET) ================= */
+@media screen and (max-width: 768px) {
   .about__me {
-    width: 65%;
+    width: 30%;
     margin: 0 auto 3rem;
   }
 
   .about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    width: 84%;
+    gap: 2rem;
+    margin: 0 auto;
   }
 
   .about__content {

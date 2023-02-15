@@ -49,7 +49,7 @@
 .service__list p {
   font-size: 0.9rem;
 }
-/* ================= MEDIA QUERIES (LARGE DEVICES) ================= */
+/* ================= MEDIA QUERIES (LAPTOP) ================= */
 
 @media screen and (max-width: 1200px) {
   .services__container {
@@ -73,11 +73,12 @@
   }
 }
 
-/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
+/* ================= MEDIA QUERIES (TABLET) ================= */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .services__container {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
+    width: 94%;
   }
 }

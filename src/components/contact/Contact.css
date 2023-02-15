@@ -59,7 +59,7 @@ textarea {
   font-size: 1rem;
 }
 
-/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+/* ================= MEDIA QUERIES (LAPTOP) ================= */
 
 @media screen and (max-width: 1024px) {
   .container.contact__container {
@@ -94,10 +94,34 @@ textarea {
   }
 }
 
-/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
+/* ================= MEDIA QUERIES (TABLET) ================= */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .container.contact__container {
-    width: var(--container-width-sm);
+    width: 75%;
+    gap: 2rem;
+  }
+
+  .contact__options {
+    gap: 1.5rem;
+  }
+
+  .contact__option:nth-of-type(1),
+  .contact__option:nth-of-type(3) {
+    flex-basis: 27%;
+  }
+
+  .contact__option:nth-of-type(2) {
+    transform: scale(1.05);
+  }
+
+  form {
+    gap: 2rem;
+    align-items: center;
+  }
+
+  input,
+  textarea {
+    width: 70%;
   }
 }
