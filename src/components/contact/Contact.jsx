@@ -61,7 +61,7 @@ const Contact = () => {
               target={"_blank"}
               rel="noreferrer"
             >
-              Send a message
+              Send message
             </a>
           </article>
 
@@ -74,7 +74,7 @@ const Contact = () => {
               target={"_blank"}
               rel="noreferrer"
             >
-              Send a message
+              Send message
             </a>
           </article>
         </div>

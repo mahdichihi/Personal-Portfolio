@@ -1,12 +1,12 @@
 .experience__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .experience__container > div {
   background: var(--color-bg-variant);
-  padding: 2.4rem 4rem;
+  padding: 2.4rem 3.5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -27,6 +27,7 @@
 .experience__content {
   display: grid;
   row-gap: 2rem;
+  column-gap: 4rem;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -40,34 +41,73 @@
   color: var(--color-primary);
 }
 
-/* ================= MEDIA QUERIES (LAPTOP) ================= */
+/* ================= MEDIA QUERIES (LAPTOP LARGE 1200px) ================= */
+@media screen and (max-width: 1200px) {
+  .experience__content {
+    column-gap: 0.5rem;
+  }
+}
+
+/* ================= MEDIA QUERIES (LAPTOP 1024px) ================= */
 
 @media screen and (max-width: 1024px) {
   .experience__container {
     grid-template-columns: 1fr;
+    width: 60%;
+    /* gap: 2rem; */
   }
 
   .experience__container > div {
-    width: 80%;
-    padding: 2rem;
+    width: 100%;
     margin: 0 auto;
   }
 
   .experience__content {
-    padding: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    column-gap: 2rem;
   }
 }
 
-/* ================= MEDIA QUERIES (TABLET) ================= */
+/* ================= MEDIA QUERIES (TABLET 768px) ================= */
 
 @media screen and (max-width: 768px) {
   .experience__container {
     gap: 2rem;
+    width: var(--container-width-md);
   }
 
   .experience__container > div {
-    width: 84%;
+    width: 100%;
     padding: 3rem 3rem;
+  }
+
+  /* .experience__content {
+    column-gap: 7rem;
+    width: 80%;
+    margin: auto;
+  } */
+}
+
+/* ================= MEDIA QUERIES (MOBILE 425px) ================= */
+
+@media screen and (max-width: 425px) {
+  .experience__container {
+    width: var(--container-width-sm);
+  }
+
+  .experience__container > div {
+    padding: 1.5rem;
+  }
+
+  .experience__content {
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  .text-light {
+    font-size: 0.7rem;
   }
 }

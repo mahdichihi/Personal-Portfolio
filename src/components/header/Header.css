@@ -1,4 +1,5 @@
 header {
+  overflow: hidden;
   padding-top: 4rem;
   height: max-content;
 }
@@ -45,27 +46,52 @@ header {
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 3rem 1.5rem 0 1.5rem;
 }
 
 /* ============== SCROLL DOWN ============== */
 .scroll__down {
   position: absolute;
-  right: -2rem;
+  right: -2.3rem;
   bottom: 15rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
 }
 
-/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
+/* ================= MEDIA QUERIES (TABLET 768px) ================= */
 @media screen and (max-width: 768px) {
-  .header {
-    height: 100vh;
+  header {
+    padding-top: 8rem;
   }
 
   .header__socials,
   .scroll__down {
     display: none;
+  }
+
+  .me {
+    width: 20rem;
+    height: 26rem;
+    left: calc(50% - 10rem);
+  }
+}
+
+/* ================= MEDIA QUERIES (MOBILE 425px) ================= */
+
+@media screen and (max-width: 425px) {
+  header {
+    padding-top: 7rem;
+  }
+
+  .cta {
+    gap: 0.8rem;
+  }
+
+  .me {
+    width: 16rem;
+    height: 20rem;
+    left: calc(50% - 8rem);
+    margin-top: 3rem;
   }
 }

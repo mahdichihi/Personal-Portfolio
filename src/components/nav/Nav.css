@@ -1,3 +1,6 @@
+.nav__container {
+  width: fit-content;
+}
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
@@ -29,4 +32,28 @@ nav a:hover {
 nav a.active {
   background: var(--color-primary);
   color: var(--color-bg);
+}
+
+/* ================= MEDIA QUERIES (TABLET 768px) ================= */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    bottom: unset;
+    top: 0;
+    border-radius: 0;
+    justify-content: space-around;
+  }
+}
+
+/* ================= MEDIA QUERIES (MOBILE 425px) ================= */
+
+@media screen and (max-width: 425px) {
+  nav {
+    padding: 0.6rem 1rem;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    padding: 0.6rem;
+  }
 }

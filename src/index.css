@@ -18,9 +18,10 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --container-width-xl: 75%;
+  --container-width-lg: 80%;
+  --container-width-md: 23rem;
+  --container-width-sm: 18rem;
 
   --transition: all 400ms ease;
 }
@@ -44,7 +45,7 @@ body {
 /* ================= GENERAL STYLES ================= */
 
 .container {
-  width: var(--container-width-lg);
+  width: var(--container-width-xl);
   margin: 0 auto;
 }
 
@@ -61,7 +62,7 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  padding-top: 8rem;
 }
 
 section > h5 {
@@ -116,27 +117,53 @@ img {
   object-fit: cover;
 }
 
-/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+/* ================= MEDIA QUERIES (LAPTOP LARGE 1200px) ================= */
+/* ================= MEDIA QUERIES (LAPTOP 1024px) ================= */
+/* ================= MEDIA QUERIES (TABLET 768px) ================= */
+/* ================= MEDIA QUERIES (MOBILE 425px) ================= */
+
+/* ================= MEDIA QUERIES (LAPTOP 1024px) ================= */
 
 @media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-lg);
+  }
+  section {
+    padding-top: 6rem;
+  }
+}
+
+/* ================= MEDIA QUERIES (TABLET 768px) ================= */
+
+@media screen and (max-width: 768px) {
   .container {
     width: var(--container-width-md);
   }
   section {
-    margin-top: 6rem;
+    padding-top: 5rem;
   }
 }
 
-/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
+/* ================= MEDIA QUERIES (MOBILE 425px) ================= */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .container {
     width: var(--container-width-sm);
   }
-  section {
-    margin-top: 2rem;
+
+  h1 {
+    font-size: 2.2rem;
   }
-  body {
-    padding: 0.5rem;
+  section {
+    padding-top: 4rem;
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    padding: 0.1rem 1rem;
+    font-size: 0.9rem;
   }
 }
